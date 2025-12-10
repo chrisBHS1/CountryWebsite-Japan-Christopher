@@ -1,38 +1,92 @@
-nav{
-  padding:5px
+.container{
+   display:flex;
+   font-family:sans-serif;
+   margin: 0 auto;
+}
+#banner{
+   background-color:rgb(255, 255, 255);
+   color:black;
+   padding:0px;
+}
+#leftbanner{
+   flex:1.25;
+   text-align:center;
+   font-size:23px;
+}
+#rightbanner{
+   flex:10;
+   text-align:center;
+   font-size:larger;
 }
 nav a{
-  color:black;
-  margin:0 10px 0 10px;
-  display:inline-block;
-  width:20%;
-  text-align:center;
+   background-color:#ff0000;
+   display:flex;
+   flex:1;
+   padding:20px;
+   text-align:center;
+   transition:0.5s;
+   color:white;
+   font-size:20px;
 }
-
-
-/* Challenge 7: Make the font for all elements Arial */
-*{
-  font-family: Arial;
-}
-/* Challenge 8: Remove the underline for all hyperlinks */
-a{
-  text-decoration: none;
-}
-/* Challenge 9: Change the bottom border of the hyperlinks in the <nav> element to 2px solid black when the visitor hovers over it */
 nav a:hover{
-  border-bottom: 2px solid black;
+   background-color:white;
+   color:#000000;
+   transition:0.5s;
 }
-/* Challenge 10: Change the background color to blue and the text to white for elements with an class of "banner" */
-.banner{
-  background-color: blue;
-  color: white;
+nav{
+   box-shadow:0px 3px 0px rgb(155, 155, 155);
 }
-/* Challenge 11: Make the font size bigger and the color of the text to blue for elements with a class of "main" */
-.main{
-  font-size: 24px;
-  color: blue;
+a{
+  text-decoration:none;
 }
 
 
-
-
+#footer{
+  background-color:#008000;
+  color:white;
+  padding:5px;
+  text-align: center;
+  justify-content: center;
+}
+#main{
+   display:flex;
+   justify-content: center;
+   flex:5;
+   font-size:20px;
+}
+#sample{
+   display:flex;
+   justify-content: center;
+   flex:5;
+   font-size:20px;
+}
+#content{
+   display:flex;
+   text-align: center;
+   justify-content: center;
+   padding: 5px;
+   align-items: center;
+   flex:8;
+}
+#links{
+   flex-direction:column;
+   border-right-style: solid;
+   border-right-color: grey;
+   flex:0.7;
+}
+#links a{
+   padding:5px;
+   margin:5px;
+   color:black;
+}
+#middle{
+   display:flex;
+}
+#back{
+ background-image: url(russiaimagebackground.jpg);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ padding: 20px;
+ height: 1500px;
+}
